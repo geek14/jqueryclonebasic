@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script>
+$(document).ready(function(){
+    $("#button").click(function(){
+  var $section = $("#clone").clone(); 
+   
+        $('#hello').append($section); 
+	
+	
+    });
+});
+</script>
+</script>
+</head>
+<body>
+<div id="clone">
+
+   Name: <input type="text" name="fname" id="name">
+  
+   Address: <textarea id="textarea" rows="4" cols="50">
+</textarea>
+ 
+  status: <select name="status" id="status">
+  <option value="active">active</option>
+  <option value="inactive">inactive</option>
+  
+</select> 
+	</div>			
+	<div id="hello">
+</div>	
+  <button  value="add" id="button">add </button>
+
+
+
+
+
+
+</body>
+</html>
