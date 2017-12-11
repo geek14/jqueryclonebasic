@@ -9,6 +9,8 @@ $(document).ready(function(){
   var $section = $("#clone").clone(); 
    
         $('#hello').append($section); 
+		$section.find('input').val("");
+		$section.find('textarea').val("");
 	
 	
     });
@@ -21,7 +23,7 @@ $(document).ready(function(){
 
    Name: <input type="text" name="fname" id="name">
   
-   Address: <textarea id="textarea" rows="4" cols="50">
+   Address: <textarea id="textarea"  type="text"   rows="4" cols="50">
 </textarea>
  
   status: <select name="status" id="status">
